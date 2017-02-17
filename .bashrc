@@ -43,7 +43,7 @@ alias docker_remove_containers="docker rm $(docker ps -a -q)"
 # ---=== NAVIGATION ===---
 alias ..='cd ..'
 alias ls="ls -al"
-
+alias hs='history'
 
 # ---==== FILES & FOLDERS ===---
 alias mkdir='mkdir -pv'
@@ -51,3 +51,7 @@ alias mkdir='mkdir -pv'
 
 
 alias cl='clear'
+
+
+#---==== NETWORK ===----
+alias ports='netstat -tulanp'
