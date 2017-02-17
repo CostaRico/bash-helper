@@ -39,3 +39,15 @@ function put_ssh(){
 alias docker_remove_imgs="docker rmi $(docker images -q)"
 alias docker_stop_all="docker stop $(docker ps -a -q)"
 alias docker_remove_containers="docker rm $(docker ps -a -q)"
+
+# ---=== NAVIGATION ===---
+alias ..='cd ..'
+alias ls="ls -al"
+
+
+# ---==== FILES & FOLDERS ===---
+alias mkdir='mkdir -pv'
+
+
+
+alias cl='clear'
