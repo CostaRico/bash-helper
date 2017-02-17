@@ -19,13 +19,13 @@ function gcp(){
 
 # ---=== UTILS ===---
 export bashrc="~/.bashrc"
-alias editBash="sublime ~/.bashrc"
-alias restartBash="source ~/.bashrc"
+alias edit_bash="sublime ~/.bashrc"
+alias restart_bash="source ~/.bashrc"
 alias rebash="source ~/.bashrc"
 
 
 # --=== MYSQL ===---
-alias mysqlStart="/usr/local/bin/mysql.server start"
+alias mysql_start="/usr/local/bin/mysql.server start"
 
 # ---=== SSH ===---
 
