@@ -33,3 +33,9 @@ alias mysql_start="/usr/local/bin/mysql.server start"
 function put_ssh(){
 	cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 }
+
+
+# ---=== DOCKER ===---
+alias docker_remove_imgs="docker rmi $(docker images -q)"
+alias docker_stop_all="docker stop $(docker ps -a -q)"
+alias docker_remove_containers="docker rm $(docker ps -a -q)"
