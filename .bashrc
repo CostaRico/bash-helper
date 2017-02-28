@@ -55,3 +55,11 @@ alias cl='clear'
 
 #---==== NETWORK ===----
 alias ports='netstat -tulanp'
+
+
+#---=== Processes ===---
+function pr_by_name(){
+    ps -ax | grep -i $1
+}
+
+
