@@ -44,6 +44,9 @@ alias docker_remove_containers="docker rm $(docker ps -a -q)"
 alias ..='cd ..'
 alias ls="ls -al"
 alias hs='history'
+function hsg(){
+	history | grep $1
+}
 
 # ---==== FILES & FOLDERS ===---
 alias mkdir='mkdir -pv'
@@ -61,5 +64,3 @@ alias ports='netstat -tulanp'
 function pr_by_name(){
     ps -ax | grep -i $1
 }
-
-
