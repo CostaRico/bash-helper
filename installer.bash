@@ -4,5 +4,6 @@
 #   curl https://raw.githubusercontent.com/CostaRico/bash-helper/master/installer.bash | bash
 
 curl -o ~/.bash_helper https://raw.githubusercontent.com/CostaRico/bash-helper/master/.bashrc
-cat ~/.bash_helper >> ~/.bashrc
+echo "
+source ~/.bash_helper" >> ~/.bashrc
 source ~/.bashrc
