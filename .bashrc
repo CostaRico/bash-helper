@@ -36,9 +36,11 @@ function put_ssh(){
 
 
 # ---=== DOCKER ===---
-alias docker_remove_imgs="docker rmi $(docker images -q)"
-alias docker_stop_all="docker stop $(docker ps -a -q)"
-alias docker_remove_containers="docker rm $(docker ps -a -q)"
+#in centos when docker is not installed raises error "command not found"
+
+#alias docker_remove_imgs="docker rmi $(docker images -q)"
+#alias docker_stop_all="docker stop $(docker ps -a -q)"
+#alias docker_remove_containers="docker rm $(docker ps -a -q)"
 
 # ---=== NAVIGATION ===---
 alias ..='cd ..'
