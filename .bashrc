@@ -4,7 +4,7 @@ alias get_сomposer='php -r "readfile(https://getcomposer.org/installer);" | php
 
 # ---=== GIT ===---
 alias gs="git status"
-alias git branch="git branch -a"
+alias gb="git branch -a"
 #gc 'fuckin commit'
 function gc(){
     git commit -m "$1" -a
