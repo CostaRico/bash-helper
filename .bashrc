@@ -70,3 +70,14 @@ alias ports='netstat -tulanp'
 function pr_by_name(){
     ps -ax | grep -i $1
 }
+
+
+function kill_by_name(){
+    sudo kill -9 $(ps aux | grep $1 | awl '{print $2}')
+}
+
+# see_largest_folders /home
+# not tested
+function see_largest_folders(){
+  du -hs $1/* | sort -rh | head -10
+}
