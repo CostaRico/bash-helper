@@ -81,3 +81,7 @@ function kill_by_name(){
 function see_largest_folders(){
   du -hs $1/* | sort -rh | head -10
 }
+
+function safari(){
+  open -a safari $1
+}
