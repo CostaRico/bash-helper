@@ -85,3 +85,7 @@ function see_largest_folders(){
 function safari(){
   open -a safari $1
 }
+
+function chrome(){
+  open -a Google\ Chrome $1
+}
