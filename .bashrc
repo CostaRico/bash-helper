@@ -24,6 +24,16 @@ alias restart_bash="source ~/.bashrc"
 alias rebash="source ~/.bashrc"
 
 
+# TODO:
+#   nginx_e f - tail -f
+#   nginx_e 40 - tail -40
+#   nginx_e - tail -50
+function nginx_e(){
+  tail -50 /var/log/nginx/error.log
+}
+
+
+
 # --=== MYSQL ===---
 alias mysql_start="/usr/local/bin/mysql.server start"
 
