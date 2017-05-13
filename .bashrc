@@ -56,6 +56,23 @@ function docker_remove_containers(){
 	docker rm $(docker ps -a -q)
 }
 
+# docker compose run
+# dcr web bundle exec rake task
+function dcr(){
+  docker-compose run "$@"
+}
+
+# dcrw bundle exec rake task
+function dcrw(){
+  docker-compose run web "$@"
+}
+
+#  like a 'bundle exec' for docker on web container
+function dbexec(){
+  docker-compose run web bundle exec "$@"
+}
+
+
 # ---=== NAVIGATION ===---
 alias ..='cd ..'
 alias ls="ls -al"
