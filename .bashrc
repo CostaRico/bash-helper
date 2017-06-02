@@ -60,6 +60,13 @@ function put_ssh(){
 }
 
 
+function gen_ssh(){
+  read -p "Type ssh username? (exmpl: your_email@example.com)" login
+  ssh-keygen -t rsa -b 4096 -C $login
+  eval "$(ssh-agent -s)"
+  ssh-add  ~/.ssh/id_rsa
+}
+
 # ---=== DOCKER ===---
 function docker_remove_imgs(){
 	docker rmi $(docker images -q)
