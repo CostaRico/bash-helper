@@ -131,3 +131,22 @@ function safari(){
 function chrome(){
   open -a Google\ Chrome $1
 }
+
+
+# -== Ruby ==-
+function install_rbenv(){
+  git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  cd ~/.rbenv && src/configure && make -C src
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+  exec bash
+  echo "Check if installed:"
+  type rbenv
+  # ruby build (rbenv install)
+  git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+  echo "Choose version:"
+  rbenv install -l
+  read -p "version:" vers
+  rbenv install $vers
+  rbenv global $vers
+  exec bash
+}
