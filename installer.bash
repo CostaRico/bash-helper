@@ -12,6 +12,9 @@ else
         echo "Installing helper..";
      echo "
         source ~/.bash_helper" >> ~/.bashrc;
+     echo "
+        source ~/.bash_helper" >> ~/.bash_profile;
 fi;
+
 
 exec bash
