@@ -4,7 +4,14 @@
 #   curl https://raw.githubusercontent.com/CostaRico/bash-helper/master/installer.bash | bash
 
 curl -o ~/.bash_helper https://raw.githubusercontent.com/CostaRico/bash-helper/master/.bashrc
-echo "
-source ~/.bash_helper" >> ~/.bashrc
-#source ~/.bashrc
+
+if grep -q bash_helper "~/.bash_helper"; then
+
+   else
+     echo "
+     source ~/.bash_helper" >> ~/.bashrc 
+fi
+
+
+
 exec bash

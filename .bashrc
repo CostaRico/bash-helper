@@ -33,6 +33,21 @@ function nginx_e(){
 }
 
 
+# create user
+function create_user(){
+  username=$1
+  useradd --create-home -s /bin/bash $username
+
+  while true; do
+      read -p "Do you wish to add user to Docker group?" yn
+      case $yn in
+          [Yy]* ) gpasswd -a $username docker;;
+          [Nn]* ) exit;;
+          * ) echo "Please answer yes or no.";;
+      esac
+  done
+}
+
 
 # --=== MYSQL ===---
 alias mysql_start="/usr/local/bin/mysql.server start"
