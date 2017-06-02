@@ -41,8 +41,8 @@ function create_user(){
   while true; do
       read -p "Do you wish to add user to Docker group?" yn
       case $yn in
-          [Yy]* ) gpasswd -a $username docker;exit;;
-          [Nn]* ) exit;;
+          [Yy]* ) gpasswd -a $username docker;break;;
+          [Nn]* ) break;;
           * ) echo "Please answer yes or no.";;
       esac
   done
