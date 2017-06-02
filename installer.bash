@@ -6,4 +6,5 @@
 curl -o ~/.bash_helper https://raw.githubusercontent.com/CostaRico/bash-helper/master/.bashrc
 echo "
 source ~/.bash_helper" >> ~/.bashrc
-source ~/.bashrc
+#source ~/.bashrc
+exec bash
