@@ -22,7 +22,7 @@ export bashrc="~/.bashrc"
 alias edit_bash="sublime ~/.bashrc"
 alias restart_bash="source ~/.bashrc"
 alias rebash="source ~/.bashrc"
-
+alias find_by_content="grep -lr"
 
 # TODO:
 #   nginx_e f - tail -f
