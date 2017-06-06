@@ -16,5 +16,5 @@ else
         source ~/.bash_helper" >> ~/.bash_profile;
 fi;
 
-
+source ~/.bash_helper
 exec bash
